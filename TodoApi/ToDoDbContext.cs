@@ -19,7 +19,7 @@ public partial class ToDoDbContext : DbContext
         modelBuilder.Entity<Item>(entity =>
         {
             entity.HasKey(e => e.Id);
-            entity.ToTable("items");
+            entity.ToTable("Items");
             entity.Property(e => e.Name).HasMaxLength(100);
         });
     }

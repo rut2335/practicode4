@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\todoapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\todoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\todoapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E71EDA4-FE1C-2822-A6C9-812607CDF2E0}|TodoApi.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\todoapi\\tododbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\TodoApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -46,7 +46,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-26T19:28:53.485Z"
+              "WhenOpened": "2025-11-26T19:28:53.485Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,14 +57,14 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\TodoApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwDoAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T19:07:53.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\\u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05D3\\\u200F\u200F\u05EA\u05D9\u05E7\u05D9\u05D4 \u05D7\u05D3\u05E9\u05D4 (2)\\TodoApi\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
