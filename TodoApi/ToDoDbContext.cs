@@ -12,11 +12,11 @@ public partial class ToDoDbContext : DbContext
     {
     }
 
-    public DbSet<Item> Items { get; set; }
+    public DbSet<Items> Items { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Item>(entity =>
+        modelBuilder.Entity<Items>(entity =>
         {
             entity.HasKey(e => e.Id);
             entity.ToTable("Items");

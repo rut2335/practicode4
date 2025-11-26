@@ -48,14 +48,14 @@ app.MapGet("/items", async (ToDoDbContext db) =>
     return await db.Items.ToListAsync();
 });
 
-app.MapPost("/items", async (ToDoDbContext db, Item newItem) =>
+app.MapPost("/items", async (ToDoDbContext db, Items newItem) =>
 {
     db.Items.Add(newItem);
     await db.SaveChangesAsync();
     return Results.Created($"/items/{newItem.Id}", newItem);
 });
 
-app.MapPut("/items/{id}", async (ToDoDbContext db, int id, Item updatedItem) =>
+app.MapPut("/items/{id}", async (ToDoDbContext db, int id, Items updatedItem) =>
 {
     var existingItem = await db.Items.FindAsync(id);
     if (existingItem == null)
@@ -81,15 +81,3 @@ app.MapDelete("/items/{id}", async (ToDoDbContext db, int id) =>
 });
 
 app.Run();
-```
-
----
-
-## עכשיו ב-Render:
-
-1.היכנסי ל - **Render Dashboard * *
-2.אפליקציית השרת → **Environment**
-3. **וודאי שיש משתנה בשם `ToDoDB`** (בלי `ConnectionStrings__`)
-4. הערך צריך להיות:
-```
-   Server = bueokunijyplsfhtqbaw - mysql.services.clever - cloud.com; Port = 3306; Database = bueokunijyplsfhtqbaw; User Id = uafujnda2en4tilg; Password = i0e8ACR3pXiLSmkvqO0l;
