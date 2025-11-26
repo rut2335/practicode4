@@ -15,11 +15,11 @@ builder.Services.AddCors(options =>
         });
 });
 
-// הגדרת DbContext
+// הגדרת DbContext - ללא AutoDetect
 builder.Services.AddDbContext<ToDoDbContext>(options =>
 {
     var conn = builder.Configuration.GetConnectionString("ToDoDB");
-    options.UseMySql(conn, ServerVersion.AutoDetect(conn));
+    options.UseMySql(conn, new MySqlServerVersion(new Version(8, 0, 21)));
 });
 
 builder.Services.AddEndpointsApiExplorer();
@@ -27,7 +27,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// ⚠️ חשוב! UseCors צריך להיות לפני כל ה-endpoints
 app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
@@ -38,13 +37,11 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/", () => "ברוך הבא ל-API של רשימת המשימות!");
 
-// get all items
 app.MapGet("/items", async (ToDoDbContext db) =>
 {
     return await db.Items.ToListAsync();
 });
 
-// post a new item
 app.MapPost("/items", async (ToDoDbContext db, Item newItem) =>
 {
     db.Items.Add(newItem);
@@ -52,7 +49,6 @@ app.MapPost("/items", async (ToDoDbContext db, Item newItem) =>
     return Results.Created($"/items/{newItem.Id}", newItem);
 });
 
-// put to update an item
 app.MapPut("/items/{id}", async (ToDoDbContext db, int id, Item updatedItem) =>
 {
     var existingItem = await db.Items.FindAsync(id);
@@ -66,7 +62,6 @@ app.MapPut("/items/{id}", async (ToDoDbContext db, int id, Item updatedItem) =>
     return Results.NoContent();
 });
 
-// delete an item
 app.MapDelete("/items/{id}", async (ToDoDbContext db, int id) =>
 {
     var item = await db.Items.FindAsync(id);
