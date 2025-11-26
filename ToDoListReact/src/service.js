@@ -22,13 +22,12 @@ export const addTask = async (name) => {
   return response.data;
 };
 
-export const setCompleted = async (id, isComplete) => {
-  const response = await axios.put(`/items/${task.id}`, {
-    id: task.id,
-    name: task.name,
-    isComplete: !task.isComplete
+export const setCompleted = async (todo, isComplete) => {
+  return await axios.put(`/items/${todo.id}`, {
+    id: todo.id,
+    name: todo.name,
+    isComplete: isComplete
   });
-  return response.data;
 };
 
 export const deleteTask = async (id) => {
