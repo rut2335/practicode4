@@ -15,10 +15,17 @@ builder.Services.AddCors(options =>
         });
 });
 
-// הגדרת DbContext - ללא AutoDetect
+// הדפסת Connection String לבדיקה
+var conn = builder.Configuration.GetConnectionString("ToDoDB");
+Console.WriteLine($"=== CONNECTION STRING: {conn?.Substring(0, Math.Min(50, conn?.Length ?? 0))}... ===");
+
+// הגדרת DbContext
 builder.Services.AddDbContext<ToDoDbContext>(options =>
 {
-    var conn = builder.Configuration.GetConnectionString("ToDoDB");
+    if (string.IsNullOrEmpty(conn))
+    {
+        Console.WriteLine("ERROR: Connection String is NULL or EMPTY!");
+    }
     options.UseMySql(conn, new MySqlServerVersion(new Version(8, 0, 21)));
 });
 
