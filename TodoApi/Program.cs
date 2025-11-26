@@ -10,9 +10,13 @@ builder.Services.AddCors(options =>
         policy => { policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader(); });
 });
 
+builder.Services.AddDbContext<ToDoDbContext>(options =>
+{
+    var conn = builder.Configuration.GetConnectionString("ToDoDB");
+    options.UseMySql(conn, ServerVersion.AutoDetect(conn));
+});
 
-
-builder.Services.AddDbContext<ToDoDbContext>();
+//builder.Services.AddDbContext<ToDoDbContext>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
