@@ -1,5 +1,5 @@
 import express from "express";
-import RenderAPI from "render-api";
+import RenderAPI from "@newskit-render/api";
 
 const app = express();
 const port = process.env.PORT || 3000;
