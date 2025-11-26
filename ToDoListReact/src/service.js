@@ -23,7 +23,11 @@ export const addTask = async (name) => {
 };
 
 export const setCompleted = async (id, isComplete) => {
-  const response = await axios.put(`/items/${id}`, { isComplete });
+  const response = await axios.put(`/items/${task.id}`, {
+    id: task.id,
+    name: task.name,
+    isComplete: !task.isComplete
+  });
   return response.data;
 };
 
