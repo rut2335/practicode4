@@ -1,8 +1,7 @@
 // service.js
 import axios from 'axios';
 
-
-axios.defaults.baseURL = "http://localhost:5293"; 
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 
 axios.interceptors.response.use(
